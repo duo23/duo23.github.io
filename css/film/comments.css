@@ -1,0 +1,55 @@
+@media screen and (max-device-width: 750px) {
+  .film-comments {
+    padding-left: 15px !important; 
+  }
+}
+
+
+.film-comments {
+  background-color: #ffffff;
+  padding-bottom: 20px;
+  border-radius: 0 0 15px 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.comments-title {
+  color: #ff7e70;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+.comments-title :hover {
+  cursor: pointer;
+}
+.comment {
+  font-weight: 600;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 2px solid #e4edf4;
+}
+.commants-wrap {
+  display: none;
+}
+.commants-wrap :first-child {
+  display: none;
+}
+.commants-wrap textarea {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border: 2px solid #e4edf4;
+  border-radius: 5px;
+  resize: none;
+  width: 95%;
+  height: 30px;
+  padding: 20px 10px 5px 15px; 
+  color: #9a9a9a;
+}
+.invalid-value::placeholder {
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  color: #ff7e70;
+}
+.open-comments {
+  font-size: 15px;
+}

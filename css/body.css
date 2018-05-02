@@ -1,0 +1,22 @@
+body {
+  background-color: #e4edf4;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.red {
+  background-color: #ff7e70;
+  border: 1px solid #ff695a;
+}
+.red:active {
+  border-color: #fb4533;
+}
+.blue {
+  background-color: #6ecdfd;
+  border: 1px solid #2fa5e1;
+}
+.blue:active {
+  border-color: #0476b0;
+}
+.cancel-float {
+  clear: both;
+}

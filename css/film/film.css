@@ -1,0 +1,85 @@
+@media screen and (max-device-width: 1000px) {
+  .film {
+    margin-left: 25% !important;
+  }
+  .film-info img {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    height: 320px !important;
+    width: 220px !important;
+  }
+  .film-info {
+    padding-right: 15px !important;
+    padding-left: 15px !important; 
+  }
+  .film-info table {
+    padding-bottom: 20px !important;
+  }
+}
+@media screen and (max-device-width: 750px) {
+  .film {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    width: 93% !important;
+    background-size: 200% !important;
+  }
+  .film-info {
+    text-align: center !important;
+  }
+  .film-info img {
+    float: none !important;
+    display: inline-block !important;
+  }
+}
+
+
+.film {
+  display: inline-block;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-left: 19%;
+  width: 62%;
+  font-size: 17px;
+  background-image: url(../../img/Poster.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 110%;
+}
+.transparent {
+  padding-top: 50px;
+  background-color: rgb(224, 198, 173, 0.6);
+  border-radius: 15px;
+}
+.film-info {
+  margin-bottom: 70px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.film-info img {
+  height: 340px;
+  width: 240px;
+  float: left;
+  border-radius: 5px;
+  margin-right: 40px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+.film-info h2 {
+  margin-bottom: 0;
+}
+.description {
+  text-align: left;
+  line-height: 25px;
+  margin-top: 10px;
+}
+.film-info table {
+  margin-top: 0;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.country, .year, .genre {
+  padding-left: 60px;
+}
+.film-info table td {
+  padding-bottom: 15px;
+}

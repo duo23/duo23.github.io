@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films library</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+    <header>
+        <div class="header">
+          <h1>Films library</h1>
+        </div>
+        <div class="add-btn-wrap">
+          <button class="add-btn" onclick="openCloseForm()" type="button">
+            +
+          </button>
+          <span>Add new film</span>
+        </div>
+    </header>
+
+    <section>
+      <form class="add-form" name="added-film" autocomplete="on">
+        <label for="title">TITLE</label><br>
+        <input type="text" id="title" maxlength="70" value="TITLE"><br>
+        <label for="year">YEAR</label><br>
+        <input type="text" id="year" maxlength="70" value="YEAR"><br>
+        <label for="country">COUNTRY</label><br>
+        <input type="text" id="country" maxlength="70" value="COUNTRY"><br>
+        <label for="genre">GENRE</label><br>
+        <input type="text" id="genre" maxlength="70" value="GENRE"><br>
+        <label for="poster">POSTER(LINK)</label><br>
+        <input type="text" id="poster" value="POSTER(LINK)"><br>
+        <label for="description">DESCRIPTION</label><br>
+        <textarea id="description">DESCRIPTION</textarea><br>
+        <button class="btn red" onclick="openCloseForm()" type="button">
+          Cancel
+        </button>
+        <button class="btn blue add-film" type="button">Add</button>
+      </form>
+    </section>
+ 
+    <section class="wrap-edit-form">
+      <form class="edit-form" name="edit-film" autocomplete="on">
+        <label for="title1">TITLE</label><br>
+        <input type="text" id="title1" maxlength="70" value="TITLE"><br>
+        <label for="year1">YEAR</label><br>
+        <input type="text" id="year1" maxlength="70" value="YEAR"><br>
+        <label for="country1">COUNTRY</label><br>
+        <input type="text" id="country1" maxlength="70" value="COUNTRY"><br>
+        <label for="genre1">GENRE</label><br>
+        <input type="text" id="genre1" maxlength="70" value="GENRE"><br>
+        <label for="poster1">POSTER(LINK)</label><br>
+        <input type="text" id="poster1" value="POSTER(LINK)"><br>
+        <label for="description1">DESCRIPTION</label><br>
+        <textarea id="description1">DESCRIPTION</textarea><br>
+        <button class="btn red" type="button" onclick="cancelEditForm()">
+          Cancel
+        </button>
+        <button class="btn blue edit-film" type="button">Save</button>
+      </form>
+    </section>
+  
+    <section class="film-list">
+      <div class="film" style="display: none;">
+        <div class="transparent">
+          <div class="film-info">
+            <img src="img/Poster.jpg"
+              alt="Poster">
+            <h2 class="title">TITLE</h2>
+            <p class="description">
+              DESCRIPTION
+            </p>
+            <table>
+              <tr>
+                <td>COUNTRY</td><td class="country">COUNTRY</td>
+              </tr>
+              <tr>
+                <td>YEAR</td><td class="year">YEAR</td>
+              </tr>
+              <tr>
+                <td>GENRE</td><td class="genre">GENRE</td>
+              </tr>
+            </table>
+            <button class="btn red delete" type="button">
+              Delete
+            </button>
+            <button class="btn blue edit" type="button">Edit</button>
+          </div>  
+          <div class="cancel-float"></div>
+          <div class="film-comments">
+            <div class="comments-title">
+              <span>Comments: </span><span class="comments-counter">0</span>
+              <span class="open-comments"> &#x0005E;</span>
+            </div>
+            <div class="commants-wrap">
+              <div class="comment"></div>
+              <textarea placeholder="Add your comment"></textarea><br>
+              <button class="btn blue add-comment" type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/fade-effect.js"></script>
+    <script src="js/add-btn.js"></script>
+    <script src="js/openCloseCommList.js"></script>
+    <script src="js/add-comment.js"></script> 
+    <script src="js/del-film.js"></script>
+    <script src="js/cancel-edit-form.js"></script>
+    <script src="js/save-edit.js"></script>
+    <script src="js/edit-film.js"></script>
+    <script src="js/add-film.js"></script>
+    <script src="js/get-data-LS.js"></script>
+    <script src="js/save-data-LS.js"></script>
+  </body>
+</html>
